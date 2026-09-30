@@ -1,0 +1,28 @@
+[project]
+name = "speech-data-analysis-preprocessing"
+version = "0.1.0"
+description = "Vietnamese FLEURS dataset analysis and audio preprocessing"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "datasets>=3.6,<4",
+    "huggingface-hub>=0.30",
+    "matplotlib>=3.9",
+    "numpy>=1.26",
+    "scipy>=1.12",
+    "soundfile>=0.12",
+]
+
+[project.scripts]
+speech-analyze = "analysis:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.uv]
+package = true
+
+[tool.setuptools]
+py-modules = ["analysis", "cache", "data", "preprocessing"]
+include-package-data = false

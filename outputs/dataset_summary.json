@@ -1,0 +1,48 @@
+{
+  "dataset": "google/fleurs",
+  "config": "vi_vn",
+  "sample_rate_hz": 16000,
+  "max_per_split": 50,
+  "duration_note": "Summaries use sampled rows when max_per_split is nonzero.",
+  "splits": {
+    "train": {
+      "rows_analyzed": 50,
+      "duration_seconds": {
+        "mean": 11.331600000000002,
+        "median": 11.43,
+        "min": 4.32,
+        "max": 19.56
+      },
+      "transcript_characters": {
+        "mean": 129.58,
+        "median": 131.0
+      }
+    },
+    "validation": {
+      "rows_analyzed": 50,
+      "duration_seconds": {
+        "mean": 11.7084,
+        "median": 10.68,
+        "min": 5.88,
+        "max": 29.94
+      },
+      "transcript_characters": {
+        "mean": 127.94,
+        "median": 126.5
+      }
+    },
+    "test": {
+      "rows_analyzed": 50,
+      "duration_seconds": {
+        "mean": 12.3552,
+        "median": 11.58,
+        "min": 5.82,
+        "max": 22.56
+      },
+      "transcript_characters": {
+        "mean": 125.36,
+        "median": 119.5
+      }
+    }
+  }
+}
